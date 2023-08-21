@@ -1,0 +1,2 @@
+  CREATE_STREAM @0 {NAME:fifo_wr_seq T:Transactions SCOPE:uvm_test_top.axi_env_h.write_fifo_agent.sequencer STREAM:1569}
+  CREATE_STREAM @0 {NAME:axi4_slave_nbk_write_64b_transfer_seq_h T:Transactions SCOPE:uvm_test_top.axi_env_h.axi_slave_agent.axi4_slave_write_seqr_h STREAM:1572}

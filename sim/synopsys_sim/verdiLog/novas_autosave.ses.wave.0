@@ -1,0 +1,803 @@
+Magic 271485
+Revision Verdi_Q-2020.03-SP2-8
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1920 454 203 181
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/hwetools/work_area/frontend/gopalVamsi_b7/git_projects/AXI_FIFO_BFM_COPY/sim/synopsys_sim/novas.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 607515.000000
+cursor 0.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 370
+; marker line index
+markerPos 749
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/hwetools/work_area/frontend/gopalVamsi_b7/git_projects/AXI_FIFO_BFM_COPY/sim/synopsys_sim/novas.fsdb"
+addSignal -h 15 /_$novas_unit__1/is_dhier_visited[31:0]
+addSignal -h 15 -holdScope is_reg_hier_dumping[31:0]
+addSignal -h 15 -holdScope is_reg_hier_recorded[31:0]
+addSignal -h 15 -UNSIGNED /_vcs_msglog/_MSG_R[31:0]
+addSignal -h 15 -UNSIGNED -holdScope _MSG_S[31:0]
+addSignal -h 15 -UNSIGNED -holdScope _MSG_T[31:0]
+addSignal -h 15 /tb_slave_assertions/aclk
+addSignal -h 15 -holdScope araddr[31:0]
+addSignal -h 15 -holdScope arburst[1:0]
+addSignal -h 15 -holdScope arcache[3:0]
+addSignal -h 15 -holdScope aresetn
+addSignal -h 15 -holdScope arid[3:0]
+addSignal -h 15 -holdScope arlen[7:0]
+addSignal -h 15 -holdScope arlock[1:0]
+addSignal -h 15 -holdScope arprot[2:0]
+addSignal -h 15 -holdScope arqos[3:0]
+addSignal -h 15 -holdScope arready
+addSignal -h 15 -holdScope arregion[3:0]
+addSignal -h 15 -holdScope arsize[2:0]
+addSignal -h 15 -holdScope aruser[3:0]
+addSignal -h 15 -holdScope arvalid
+addSignal -h 15 -holdScope awaddr[31:0]
+addSignal -h 15 -holdScope awburst[1:0]
+addSignal -h 15 -holdScope awcache[3:0]
+addSignal -h 15 -holdScope awid[3:0]
+addSignal -h 15 -holdScope awlen[3:0]
+addSignal -h 15 -holdScope awlock[1:0]
+addSignal -h 15 -holdScope awprot[2:0]
+addSignal -h 15 -holdScope awready
+addSignal -h 15 -holdScope awsize[2:0]
+addSignal -h 15 -holdScope awvalid
+addSignal -h 15 -holdScope bid[3:0]
+addSignal -h 15 -holdScope bready
+addSignal -h 15 -holdScope bresp[1:0]
+addSignal -h 15 -holdScope buser[3:0]
+addSignal -h 15 -holdScope bvalid
+addSignal -h 15 -holdScope name
+addSignal -h 15 -holdScope rdata[55:0]
+addSignal -h 15 -holdScope rid[3:0]
+addSignal -h 15 -holdScope rlast
+addSignal -h 15 -holdScope rready
+addSignal -h 15 -holdScope rresp[1:0]
+addSignal -h 15 -holdScope ruser[3:0]
+addSignal -h 15 -holdScope rvalid
+addSignal -h 15 -holdScope wdata[55:0]
+addSignal -h 15 -holdScope wlast
+addSignal -h 15 -holdScope wready
+addSignal -h 15 -holdScope wstrb[6:0]
+addSignal -h 15 -holdScope wuser[3:0]
+addSignal -h 15 -holdScope wvalid
+addSignal -h 15 /top/aclk
+addSignal -h 15 -holdScope aresetn
+addSignal -h 15 -holdScope freq[31:0]
+addSignal -h 15 -holdScope resetn
+addSignal -h 15 -holdScope t[31:0]
+addSignal -h 15 /top/fintf/clk
+addSignal -h 15 -holdScope empty
+addSignal -h 15 -holdScope full
+addSignal -h 15 -holdScope rd_data[127:0]
+addSignal -h 15 -holdScope rd_en
+addSignal -h 15 -holdScope rst
+addSignal -h 15 -holdScope wr_data[127:0]
+addSignal -h 15 -holdScope wr_en
+addSignal -h 15 /top/fintf/DRIVER/clk
+addSignal -h 15 /top/fintf/MONITOR/clk
+addSignal -h 15 /top/fintf/fifo_driver_cb/empty
+addSignal -h 15 -holdScope full
+addSignal -h 15 -holdScope rd_data[127:0]
+addSignal -h 15 -holdScope rd_en
+addSignal -h 15 -holdScope wr_data[127:0]
+addSignal -h 15 -holdScope wr_en
+addSignal -h 15 /top/fintf/fifo_monitor_cb/empty
+addSignal -h 15 -holdScope full
+addSignal -h 15 -holdScope rd_data[127:0]
+addSignal -h 15 -holdScope rd_en
+addSignal -h 15 -holdScope wr_data[127:0]
+addSignal -h 15 -holdScope wr_en
+addSignal -h 15 /top/genblk1[0]/axi4_slave_agent_bfm_h/axi4_slave_drv_bfm_h/a[7:0]
+addSignal -h 15 -holdScope aclk
+addSignal -h 15 -holdScope araddr[31:0]
+addSignal -h 15 -holdScope arburst[1:0]
+addSignal -h 15 -holdScope arcache[3:0]
+addSignal -h 15 -holdScope aresetn
+addSignal -h 15 -holdScope arid[3:0]
+addSignal -h 15 -holdScope arlen[7:0]
+addSignal -h 15 -holdScope arlock[1:0]
+addSignal -h 15 -holdScope arprot[2:0]
+addSignal -h 15 -holdScope arqos[3:0]
+addSignal -h 15 -holdScope arready
+addSignal -h 15 -holdScope arregion[3:0]
+addSignal -h 15 -holdScope arsize[2:0]
+addSignal -h 15 -holdScope aruser[3:0]
+addSignal -h 15 -holdScope arvalid
+addSignal -h 15 -holdScope awaddr[31:0]
+addSignal -h 15 -holdScope awburst[1:0]
+addSignal -h 15 -holdScope awcache[3:0]
+addSignal -h 15 -holdScope awid[3:0]
+addSignal -h 15 -holdScope awlen[3:0]
+addSignal -h 15 -holdScope awlock[1:0]
+addSignal -h 15 -holdScope awprot[2:0]
+addSignal -h 15 -holdScope awready
+addSignal -h 15 -holdScope awsize[2:0]
+addSignal -h 15 -holdScope awvalid
+addSignal -h 15 -holdScope bid[3:0]
+addSignal -h 15 -holdScope bready
+addSignal -h 15 -holdScope bresp[1:0]
+addSignal -h 15 -holdScope buser[3:0]
+addSignal -h 15 -holdScope bvalid
+addSignal -h 15 -holdScope i[7:0]
+addSignal -h 15 -holdScope j[7:0]
+addSignal -h 15 -holdScope mem_arid[0:255]
+addSignal -h 15 -holdScope mem_awid[0:255]
+addSignal -h 15 -holdScope mem_raddr[0:255]
+addSignal -h 15 -holdScope mem_rburst[0:255]
+addSignal -h 15 -holdScope mem_rlen[0:255]
+addSignal -h 15 -holdScope mem_rsize[0:255]
+addSignal -h 15 -holdScope mem_waddr[0:255]
+addSignal -h 15 -holdScope mem_wburst[0:255]
+addSignal -h 15 -holdScope mem_wlast[0:255]
+addSignal -h 15 -holdScope mem_wlen[0:255]
+addSignal -h 15 -holdScope mem_wsize[0:255]
+addSignal -h 15 -holdScope name
+addSignal -h 15 -holdScope rdata[55:0]
+addSignal -h 15 -holdScope rid[3:0]
+addSignal -h 15 -holdScope rlast
+addSignal -h 15 -holdScope rready
+addSignal -h 15 -holdScope rresp[1:0]
+addSignal -h 15 -holdScope ruser[3:0]
+addSignal -h 15 -holdScope rvalid
+addSignal -h 15 -holdScope wdata[55:0]
+addSignal -h 15 -holdScope wlast
+addSignal -h 15 -holdScope wready
+addSignal -h 15 -holdScope wstrb[6:0]
+addSignal -h 15 -holdScope wuser[3:0]
+addSignal -h 15 -holdScope wvalid
+addSignal -h 15 /top/genblk1[0]/axi4_slave_agent_bfm_h/axi4_slave_drv_bfm_h/S_A/aclk
+addSignal -h 15 -holdScope araddr[31:0]
+addSignal -h 15 -holdScope arburst[1:0]
+addSignal -h 15 -holdScope arcache[3:0]
+addSignal -h 15 -holdScope aresetn
+addSignal -h 15 -holdScope arid[3:0]
+addSignal -h 15 -holdScope arlen[7:0]
+addSignal -h 15 -holdScope arlock[1:0]
+addSignal -h 15 -holdScope arprot[2:0]
+addSignal -h 15 -holdScope arqos[3:0]
+addSignal -h 15 -holdScope arready
+addSignal -h 15 -holdScope arregion[3:0]
+addSignal -h 15 -holdScope arsize[2:0]
+addSignal -h 15 -holdScope aruser[3:0]
+addSignal -h 15 -holdScope arvalid
+addSignal -h 15 -holdScope awaddr[31:0]
+addSignal -h 15 -holdScope awburst[1:0]
+addSignal -h 15 -holdScope awcache[3:0]
+addSignal -h 15 -holdScope awid[3:0]
+addSignal -h 15 -holdScope awlen[3:0]
+addSignal -h 15 -holdScope awlock[1:0]
+addSignal -h 15 -holdScope awprot[2:0]
+addSignal -h 15 -holdScope awready
+addSignal -h 15 -holdScope awsize[2:0]
+addSignal -h 15 -holdScope awvalid
+addSignal -h 15 -holdScope bid[3:0]
+addSignal -h 15 -holdScope bready
+addSignal -h 15 -holdScope bresp[1:0]
+addSignal -h 15 -holdScope buser[3:0]
+addSignal -h 15 -holdScope bvalid
+addSignal -h 15 -holdScope rdata[55:0]
+addSignal -h 15 -holdScope rid[3:0]
+addSignal -h 15 -holdScope rlast
+addSignal -h 15 -holdScope rready
+addSignal -h 15 -holdScope rresp[1:0]
+addSignal -h 15 -holdScope ruser[3:0]
+addSignal -h 15 -holdScope rvalid
+addSignal -h 15 -holdScope wdata[55:0]
+addSignal -h 15 -holdScope wlast
+addSignal -h 15 -holdScope wready
+addSignal -h 15 -holdScope wstrb[6:0]
+addSignal -h 15 -holdScope wuser[3:0]
+addSignal -h 15 -holdScope wvalid
+addSignal -h 15 /top/genblk1[0]/axi4_slave_agent_bfm_h/axi4_slave_mon_bfm_h/aclk
+addSignal -h 15 -holdScope araddr[31:0]
+addSignal -h 15 -holdScope arburst[1:0]
+addSignal -h 15 -holdScope arcache[3:0]
+addSignal -h 15 -holdScope aresetn
+addSignal -h 15 -holdScope arid[3:0]
+addSignal -h 15 -holdScope arlen[7:0]
+addSignal -h 15 -holdScope arlock[1:0]
+addSignal -h 15 -holdScope arprot[2:0]
+addSignal -h 15 -holdScope arqos[3:0]
+addSignal -h 15 -holdScope arready
+addSignal -h 15 -holdScope arregion[3:0]
+addSignal -h 15 -holdScope arsize[2:0]
+addSignal -h 15 -holdScope aruser[3:0]
+addSignal -h 15 -holdScope arvalid
+addSignal -h 15 -holdScope awaddr[31:0]
+addSignal -h 15 -holdScope awburst[1:0]
+addSignal -h 15 -holdScope awcache[3:0]
+addSignal -h 15 -holdScope awid[3:0]
+addSignal -h 15 -holdScope awlen[3:0]
+addSignal -h 15 -holdScope awlock[1:0]
+addSignal -h 15 -holdScope awprot[2:0]
+addSignal -h 15 -holdScope awready
+addSignal -h 15 -holdScope awsize[2:0]
+addSignal -h 15 -holdScope awvalid
+addSignal -h 15 -holdScope bid[3:0]
+addSignal -h 15 -holdScope bready
+addSignal -h 15 -holdScope bresp[1:0]
+addSignal -h 15 -holdScope buser[3:0]
+addSignal -h 15 -holdScope bvalid
+addSignal -h 15 -holdScope i[3:0]
+addSignal -h 15 -holdScope rdata[55:0]
+addSignal -h 15 -holdScope rid[3:0]
+addSignal -h 15 -holdScope rlast
+addSignal -h 15 -holdScope rready
+addSignal -h 15 -holdScope rresp[1:0]
+addSignal -h 15 -holdScope ruser[3:0]
+addSignal -h 15 -holdScope rvalid
+addSignal -h 15 -holdScope wdata[55:0]
+addSignal -h 15 -holdScope wlast
+addSignal -h 15 -holdScope wready
+addSignal -h 15 -holdScope wstrb[6:0]
+addSignal -h 15 -holdScope wuser[3:0]
+addSignal -h 15 -holdScope wvalid
+addSignal -h 15 /top/genblk1[0]/axi4_slave_agent_bfm_h/intf/aclk
+addSignal -h 15 -holdScope araddr[31:0]
+addSignal -h 15 -holdScope arburst[1:0]
+addSignal -h 15 -holdScope arcache[1:0]
+addSignal -h 15 -holdScope aresetn
+addSignal -h 15 -holdScope arid[7:0]
+addSignal -h 15 -holdScope arlen[7:0]
+addSignal -h 15 -holdScope arlock[1:0]
+addSignal -h 15 -holdScope arprot[2:0]
+addSignal -h 15 -holdScope arqos[3:0]
+addSignal -h 15 -holdScope arready
+addSignal -h 15 -holdScope arregion[3:0]
+addSignal -h 15 -holdScope arsize[2:0]
+addSignal -h 15 -holdScope aruser[3:0]
+addSignal -h 15 -holdScope arvalid
+addSignal -h 15 -holdScope awaddr[31:0]
+addSignal -h 15 -holdScope awburst[1:0]
+addSignal -h 15 -holdScope awcache[1:0]
+addSignal -h 15 -holdScope awid[7:0]
+addSignal -h 15 -holdScope awlen[7:0]
+addSignal -h 15 -holdScope awlock[1:0]
+addSignal -h 15 -holdScope awprot[2:0]
+addSignal -h 15 -holdScope awqos[3:0]
+addSignal -h 15 -holdScope awready
+addSignal -h 15 -holdScope awregion[3:0]
+addSignal -h 15 -holdScope awsize[2:0]
+addSignal -h 15 -holdScope awuser
+addSignal -h 15 -holdScope awvalid
+addSignal -h 15 -holdScope bid[7:0]
+addSignal -h 15 -holdScope bready
+addSignal -h 15 -holdScope bresp[1:0]
+addSignal -h 15 -holdScope buser[3:0]
+addSignal -h 15 -holdScope bvalid
+addSignal -h 15 -holdScope rdata[55:0]
+addSignal -h 15 -holdScope rid[7:0]
+addSignal -h 15 -holdScope rlast
+addSignal -h 15 -holdScope rready
+addSignal -h 15 -holdScope rresp[1:0]
+addSignal -h 15 -holdScope ruser[3:0]
+addSignal -h 15 -holdScope rvalid
+addSignal -h 15 -holdScope wdata[55:0]
+addSignal -h 15 -holdScope wlast
+addSignal -h 15 -holdScope wready
+addSignal -h 15 -holdScope wstrb[6:0]
+addSignal -h 15 -holdScope wuser[3:0]
+addSignal -h 15 -holdScope wvalid
+addSignal -h 15 /top/intf/aclk
+addSignal -h 15 -holdScope araddr[31:0]
+addSignal -h 15 -holdScope arburst[1:0]
+addSignal -h 15 -holdScope arcache[1:0]
+addSignal -h 15 -holdScope aresetn
+addSignal -h 15 -holdScope arid[7:0]
+addSignal -h 15 -holdScope arlen[7:0]
+addSignal -h 15 -holdScope arlock[1:0]
+addSignal -h 15 -holdScope arprot[2:0]
+addSignal -h 15 -holdScope arqos[3:0]
+addSignal -h 15 -holdScope arready
+addSignal -h 15 -holdScope arregion[3:0]
+addSignal -h 15 -holdScope arsize[2:0]
+addSignal -h 15 -holdScope aruser[3:0]
+addSignal -h 15 -holdScope arvalid
+addSignal -h 15 -holdScope awaddr[31:0]
+addSignal -h 15 -holdScope awburst[1:0]
+addSignal -h 15 -holdScope awcache[1:0]
+addSignal -h 15 -holdScope awid[7:0]
+addSignal -h 15 -holdScope awlen[7:0]
+addSignal -h 15 -holdScope awlock[1:0]
+addSignal -h 15 -holdScope awprot[2:0]
+addSignal -h 15 -holdScope awqos[3:0]
+addSignal -h 15 -holdScope awready
+addSignal -h 15 -holdScope awregion[3:0]
+addSignal -h 15 -holdScope awsize[2:0]
+addSignal -h 15 -holdScope awuser
+addSignal -h 15 -holdScope awvalid
+addSignal -h 15 -holdScope bid[7:0]
+addSignal -h 15 -holdScope bready
+addSignal -h 15 -holdScope bresp[1:0]
+addSignal -h 15 -holdScope buser[3:0]
+addSignal -h 15 -holdScope bvalid
+addSignal -h 15 -holdScope rdata[55:0]
+addSignal -h 15 -holdScope rid[7:0]
+addSignal -h 15 -holdScope rlast
+addSignal -h 15 -holdScope rready
+addSignal -h 15 -holdScope rresp[1:0]
+addSignal -h 15 -holdScope ruser[3:0]
+addSignal -h 15 -holdScope rvalid
+addSignal -h 15 -holdScope wdata[55:0]
+addSignal -h 15 -holdScope wlast
+addSignal -h 15 -holdScope wready
+addSignal -h 15 -holdScope wstrb[6:0]
+addSignal -h 15 -holdScope wuser[3:0]
+addSignal -h 15 -holdScope wvalid
+addSignal -h 15 /top/project_axi4_top/ACLK
+addSignal -h 15 -holdScope ARADDR_a[31:0]
+addSignal -h 15 -holdScope ARBURST_a[1:0]
+addSignal -h 15 -holdScope ARCACHE_a[1:0]
+addSignal -h 15 -holdScope ARESETn
+addSignal -h 15 -holdScope ARID_a[3:0]
+addSignal -h 15 -holdScope ARLEN_a[3:0]
+addSignal -h 15 -holdScope ARLOCK_a[1:0]
+addSignal -h 15 -holdScope ARPROT_a[2:0]
+addSignal -h 15 -holdScope ARREADY_a
+addSignal -h 15 -holdScope ARSIZE_a[2:0]
+addSignal -h 15 -holdScope ARVALID_a
+addSignal -h 15 -holdScope AWADDR_a[31:0]
+addSignal -h 15 -holdScope AWBURST_a[1:0]
+addSignal -h 15 -holdScope AWCACHE_a[1:0]
+addSignal -h 15 -holdScope AWID_a[3:0]
+addSignal -h 15 -holdScope AWLEN_a[3:0]
+addSignal -h 15 -holdScope AWLOCK_a[1:0]
+addSignal -h 15 -holdScope AWPROT_a[2:0]
+addSignal -h 15 -holdScope AWREADY_a
+addSignal -h 15 -holdScope AWSIZE_a[2:0]
+addSignal -h 15 -holdScope AWVALID_a
+addSignal -h 15 -holdScope BID_a[3:0]
+addSignal -h 15 -holdScope BREADY_a
+addSignal -h 15 -holdScope BRESP_a[1:0]
+addSignal -h 15 -holdScope BVALID_a
+addSignal -h 15 -holdScope FIFO_EMPTY
+addSignal -h 15 -holdScope FIFO_FULL
+addSignal -h 15 -holdScope RDATA_a[63:0]
+addSignal -h 15 -holdScope READ_DATA[127:0]
+addSignal -h 15 -holdScope READ_ENABLE
+addSignal -h 15 -holdScope RID_a[3:0]
+addSignal -h 15 -holdScope RLAST_a
+addSignal -h 15 -holdScope RREADY_a
+addSignal -h 15 -holdScope RRESP_a[1:0]
+addSignal -h 15 -holdScope RVALID_a
+addSignal -h 15 -holdScope WDATA_a[63:0]
+addSignal -h 15 -holdScope WID_a[3:0]
+addSignal -h 15 -holdScope WLAST_a
+addSignal -h 15 -holdScope WREADY_a
+addSignal -h 15 -holdScope WRITE_DATA[127:0]
+addSignal -h 15 -holdScope WRITE_ENABLE
+addSignal -h 15 -holdScope WSTRB_a[7:0]
+addSignal -h 15 -holdScope WVALID_a
+addSignal -h 15 -holdScope araddr[31:0]
+addSignal -h 15 -holdScope arburst[1:0]
+addSignal -h 15 -holdScope arcache[1:0]
+addSignal -h 15 -holdScope arlen[3:0]
+addSignal -h 15 -holdScope arlock[1:0]
+addSignal -h 15 -holdScope arprot[2:0]
+addSignal -h 15 -holdScope arsize[2:0]
+addSignal -h 15 -holdScope awaddr[31:0]
+addSignal -h 15 -holdScope awburst[1:0]
+addSignal -h 15 -holdScope awcache[1:0]
+addSignal -h 15 -holdScope awlen[3:0]
+addSignal -h 15 -holdScope awlock[1:0]
+addSignal -h 15 -holdScope awprot[2:0]
+addSignal -h 15 -holdScope awsize[2:0]
+addSignal -h 15 -holdScope bid[-1:0]
+addSignal -h 15 -holdScope bresp[1:0]
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope empty
+addSignal -h 15 -holdScope full
+addSignal -h 15 -holdScope rd_data[127:0]
+addSignal -h 15 -holdScope rd_en
+addSignal -h 15 -holdScope rd_rsp_en
+addSignal -h 15 -holdScope rd_trn_en
+addSignal -h 15 -holdScope rdata[63:0]
+addSignal -h 15 -holdScope rid[3:0]
+addSignal -h 15 -holdScope rlast
+addSignal -h 15 -holdScope rresp[1:0]
+addSignal -h 15 -holdScope rstn
+addSignal -h 15 -holdScope txn_id_r[3:0]
+addSignal -h 15 -holdScope txn_id_w[3:0]
+addSignal -h 15 -holdScope wdata[63:0]
+addSignal -h 15 -holdScope wr_data[127:0]
+addSignal -h 15 -holdScope wr_en
+addSignal -h 15 -holdScope wr_rsp_en
+addSignal -h 15 -holdScope wr_trn_en
+addSignal -h 15 -holdScope write_data
+addSignal -h 15 -holdScope wstrb[7:0]
+addSignal -h 15 /top/project_axi4_top/DUT_FIFO/FIFO_EMPTY
+addSignal -h 15 -holdScope FIFO_FULL
+addSignal -h 15 -holdScope READ_DATA[127:0]
+addSignal -h 15 -holdScope READ_ENABLE
+addSignal -h 15 -holdScope WRITE_DATA[127:0]
+addSignal -h 15 -holdScope WRITE_ENABLE
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope empty
+addSignal -h 15 -holdScope full
+addSignal -h 15 -holdScope rd_data[127:0]
+addSignal -h 15 -holdScope rd_en
+addSignal -h 15 -holdScope rst
+addSignal -h 15 -holdScope wr_data[127:0]
+addSignal -h 15 -holdScope wr_en
+addSignal -h 15 /top/project_axi4_top/DUT_FIFO/read_fifo/clk
+addSignal -h 15 -holdScope counter[11:0]
+addSignal -h 15 -holdScope empty
+addSignal -h 15 -holdScope full
+addSignal -h 15 -holdScope mem[0:4095]
+addSignal -h 15 -holdScope rd_data[127:0]
+addSignal -h 15 -holdScope rd_en
+addSignal -h 15 -holdScope rd_ptr[11:0]
+addSignal -h 15 -holdScope rst
+addSignal -h 15 -holdScope wr_data[127:0]
+addSignal -h 15 -holdScope wr_en
+addSignal -h 15 -holdScope wr_ptr[11:0]
+addSignal -h 15 /top/project_axi4_top/DUT_FIFO/write_fifo/clk
+addSignal -h 15 -holdScope counter[11:0]
+addSignal -h 15 -holdScope empty
+addSignal -h 15 -holdScope full
+addSignal -h 15 -holdScope mem[0:4095]
+addSignal -h 15 -holdScope rd_data[127:0]
+addSignal -h 15 -holdScope rd_en
+addSignal -h 15 -holdScope rd_ptr[11:0]
+addSignal -h 15 -holdScope rst
+addSignal -h 15 -holdScope wr_data[127:0]
+addSignal -h 15 -holdScope wr_en
+addSignal -h 15 -holdScope wr_ptr[11:0]
+addSignal -h 15 /top/project_axi4_top/DUT_axi/AClk
+addSignal -h 15 -holdScope ARADDR[31:0]
+addSignal -h 15 -holdScope ARBURST[1:0]
+addSignal -h 15 -holdScope ARCACHE[1:0]
+addSignal -h 15 -holdScope ARID[3:0]
+addSignal -h 15 -holdScope ARLEN[7:0]
+addSignal -h 15 -holdScope ARLOCK[1:0]
+addSignal -h 15 -holdScope ARPROT[2:0]
+addSignal -h 15 -holdScope ARREADY
+addSignal -h 15 -holdScope ARSIZE[2:0]
+addSignal -h 15 -holdScope ARVALID
+addSignal -h 15 -holdScope ARstn
+addSignal -h 15 -holdScope AWADDR[31:0]
+addSignal -h 15 -holdScope AWBURST[1:0]
+addSignal -h 15 -holdScope AWCACHE[1:0]
+addSignal -h 15 -holdScope AWID[7:0]
+addSignal -h 15 -holdScope AWLEN[7:0]
+addSignal -h 15 -holdScope AWLOCK[1:0]
+addSignal -h 15 -holdScope AWPROT[2:0]
+addSignal -h 15 -holdScope AWREADY
+addSignal -h 15 -holdScope AWSIZE[2:0]
+addSignal -h 15 -holdScope AWVALID
+addSignal -h 15 -holdScope BID[3:0]
+addSignal -h 15 -holdScope BREADY
+addSignal -h 15 -holdScope BRESP[1:0]
+addSignal -h 15 -holdScope BVALID
+addSignal -h 15 -holdScope RDATA[63:0]
+addSignal -h 15 -holdScope RID[3:0]
+addSignal -h 15 -holdScope RLAST
+addSignal -h 15 -holdScope RREADY
+addSignal -h 15 -holdScope RRESP[1:0]
+addSignal -h 15 -holdScope RVALID
+addSignal -h 15 -holdScope TXN_ID_R_d[3:0]
+addSignal -h 15 -holdScope TXN_ID_W_d[3:0]
+addSignal -h 15 -holdScope WDATA[63:0]
+addSignal -h 15 -holdScope WID[3:0]
+addSignal -h 15 -holdScope WLAST
+addSignal -h 15 -holdScope WREADY
+addSignal -h 15 -holdScope WSTRB[7:0]
+addSignal -h 15 -holdScope WVALID
+addSignal -h 15 -holdScope araddr_d[31:0]
+addSignal -h 15 -holdScope arburst_d[1:0]
+addSignal -h 15 -holdScope arcache_d[1:0]
+addSignal -h 15 -holdScope arlen_d[7:0]
+addSignal -h 15 -holdScope arlock_d[1:0]
+addSignal -h 15 -holdScope arprot_d[2:0]
+addSignal -h 15 -holdScope arsize_d[2:0]
+addSignal -h 15 -holdScope awaddr_d[31:0]
+addSignal -h 15 -holdScope awburst_d[1:0]
+addSignal -h 15 -holdScope awcache_d[1:0]
+addSignal -h 15 -holdScope awlen_d[7:0]
+addSignal -h 15 -holdScope awlock_d[1:0]
+addSignal -h 15 -holdScope awprot_d[2:0]
+addSignal -h 15 -holdScope awsize_d[2:0]
+addSignal -h 15 -holdScope bid_d[3:0]
+addSignal -h 15 -holdScope bresp_d[1:0]
+addSignal -h 15 -holdScope r_last_d
+addSignal -h 15 -holdScope rd_rsp_en_d
+addSignal -h 15 -holdScope rd_trn_en
+addSignal -h 15 -holdScope rdata_d[63:0]
+addSignal -h 15 -holdScope rid_d[7:0]
+addSignal -h 15 -holdScope rresp_d[1:0]
+addSignal -h 15 -holdScope wdata_d[63:0]
+addSignal -h 15 -holdScope wr_rsp_en_d
+addSignal -h 15 -holdScope wr_trn_en
+addSignal -h 15 -holdScope wstrb_d[7:0]
+addSignal -h 15 /top/project_axi4_top/DUT_axi/AXI_READ_CONTROL/AClk
+addSignal -h 15 -holdScope ARADDR[31:0]
+addSignal -h 15 -holdScope ARBURST[1:0]
+addSignal -h 15 -holdScope ARCACHE[1:0]
+addSignal -h 15 -holdScope ARID[7:0]
+addSignal -h 15 -holdScope ARLEN[7:0]
+addSignal -h 15 -holdScope ARLOCK[1:0]
+addSignal -h 15 -holdScope ARPROT[2:0]
+addSignal -h 15 -holdScope ARREADY
+addSignal -h 15 -holdScope ARSIZE[2:0]
+addSignal -h 15 -holdScope ARVALID
+addSignal -h 15 -holdScope ARst
+addSignal -h 15 -holdScope BL[7:0]
+addSignal -h 15 -holdScope RDATA[63:0]
+addSignal -h 15 -holdScope RID[7:0]
+addSignal -h 15 -holdScope RLAST
+addSignal -h 15 -holdScope RREADY
+addSignal -h 15 -holdScope RRESP[1:0]
+addSignal -h 15 -holdScope RVALID
+addSignal -h 15 -holdScope TXN_ID_R_d[3:0]
+addSignal -h 15 -holdScope TXN_ID_R_r[7:0]
+addSignal -h 15 -holdScope address_en
+addSignal -h 15 -holdScope ar_addr[31:0]
+addSignal -h 15 -holdScope ar_burst[1:0]
+addSignal -h 15 -holdScope ar_id[3:0]
+addSignal -h 15 -holdScope ar_len[3:0]
+addSignal -h 15 -holdScope ar_ready
+addSignal -h 15 -holdScope ar_size[2:0]
+addSignal -h 15 -holdScope ar_valid
+addSignal -h 15 -holdScope ar_valid_t
+addSignal -h 15 -holdScope araddr_d[31:0]
+addSignal -h 15 -holdScope araddr_r[31:0]
+addSignal -h 15 -holdScope arburst_d[1:0]
+addSignal -h 15 -holdScope arburst_r[1:0]
+addSignal -h 15 -holdScope arcache[1:0]
+addSignal -h 15 -holdScope arcache_d[1:0]
+addSignal -h 15 -holdScope arcache_r[1:0]
+addSignal -h 15 -holdScope arlen_d[3:0]
+addSignal -h 15 -holdScope arlen_r[7:0]
+addSignal -h 15 -holdScope arlock[1:0]
+addSignal -h 15 -holdScope arlock_d[1:0]
+addSignal -h 15 -holdScope arlock_r[1:0]
+addSignal -h 15 -holdScope arprot[2:0]
+addSignal -h 15 -holdScope arprot_d[2:0]
+addSignal -h 15 -holdScope arprot_r[2:0]
+addSignal -h 15 -holdScope arsize_d[2:0]
+addSignal -h 15 -holdScope arsize_r[2:0]
+addSignal -h 15 -holdScope beat_cnt[7:0]
+addSignal -h 15 -holdScope beat_cnt_en
+addSignal -h 15 -holdScope beat_cnt_reg[7:0]
+addSignal -h 15 -holdScope data_en
+addSignal -h 15 -holdScope nst[2:0]
+addSignal -h 15 -holdScope pst[2:0]
+addSignal -h 15 -holdScope r_data[63:0]
+addSignal -h 15 -holdScope r_data_r[63:0]
+addSignal -h 15 -holdScope r_id[3:0]
+addSignal -h 15 -holdScope r_id_r[7:0]
+addSignal -h 15 -holdScope r_last
+addSignal -h 15 -holdScope r_last_d
+addSignal -h 15 -holdScope r_ready
+addSignal -h 15 -holdScope r_ready_t
+addSignal -h 15 -holdScope r_resp[1:0]
+addSignal -h 15 -holdScope r_resp_r[1:0]
+addSignal -h 15 -holdScope r_valid
+addSignal -h 15 -holdScope rd_addr[31:0]
+addSignal -h 15 -holdScope rd_rsp_en
+addSignal -h 15 -holdScope rd_rsp_en_d
+addSignal -h 15 -holdScope rd_rsp_en_r
+addSignal -h 15 -holdScope rd_trn_en
+addSignal -h 15 -holdScope rd_trn_en_reg
+addSignal -h 15 -holdScope rdata_d[63:0]
+addSignal -h 15 -holdScope rid_d[3:0]
+addSignal -h 15 -holdScope rresp_d[1:0]
+addSignal -h 15 /top/project_axi4_top/DUT_axi/AXI_WRITE_CONTROL/AClk
+addSignal -h 15 -holdScope ARst
+addSignal -h 15 -holdScope AWADDR[31:0]
+addSignal -h 15 -holdScope AWBURST[1:0]
+addSignal -h 15 -holdScope AWCACHE[1:0]
+addSignal -h 15 -holdScope AWID[3:0]
+addSignal -h 15 -holdScope AWLEN[7:0]
+addSignal -h 15 -holdScope AWLOCK[1:0]
+addSignal -h 15 -holdScope AWPROT[2:0]
+addSignal -h 15 -holdScope AWREADY
+addSignal -h 15 -holdScope AWSIZE[2:0]
+addSignal -h 15 -holdScope AWVALID
+addSignal -h 15 -holdScope BID[3:0]
+addSignal -h 15 -holdScope BL[7:0]
+addSignal -h 15 -holdScope BREADY
+addSignal -h 15 -holdScope BRESP[1:0]
+addSignal -h 15 -holdScope BVALID
+addSignal -h 15 -holdScope TXN_ID_W_d[3:0]
+addSignal -h 15 -holdScope TXN_ID_W_r[3:0]
+addSignal -h 15 -holdScope WDATA[63:0]
+addSignal -h 15 -holdScope WID[3:0]
+addSignal -h 15 -holdScope WLAST
+addSignal -h 15 -holdScope WREADY
+addSignal -h 15 -holdScope WSTRB[7:0]
+addSignal -h 15 -holdScope WVALID
+addSignal -h 15 -holdScope address_en
+addSignal -h 15 -holdScope aw_addr[31:0]
+addSignal -h 15 -holdScope aw_burst[1:0]
+addSignal -h 15 -holdScope aw_id[7:0]
+addSignal -h 15 -holdScope aw_len[7:0]
+addSignal -h 15 -holdScope aw_ready
+addSignal -h 15 -holdScope aw_size[2:0]
+addSignal -h 15 -holdScope aw_valid
+addSignal -h 15 -holdScope aw_valid_t
+addSignal -h 15 -holdScope awaddr_d[31:0]
+addSignal -h 15 -holdScope awaddr_r[31:0]
+addSignal -h 15 -holdScope awburst_d[1:0]
+addSignal -h 15 -holdScope awburst_r[1:0]
+addSignal -h 15 -holdScope awcache[1:0]
+addSignal -h 15 -holdScope awcache_d[1:0]
+addSignal -h 15 -holdScope awcache_r[1:0]
+addSignal -h 15 -holdScope awlen_d[3:0]
+addSignal -h 15 -holdScope awlen_r[7:0]
+addSignal -h 15 -holdScope awlock[1:0]
+addSignal -h 15 -holdScope awlock_d[1:0]
+addSignal -h 15 -holdScope awlock_r[1:0]
+addSignal -h 15 -holdScope awprot[2:0]
+addSignal -h 15 -holdScope awprot_d[2:0]
+addSignal -h 15 -holdScope awprot_r[2:0]
+addSignal -h 15 -holdScope awsize_d[2:0]
+addSignal -h 15 -holdScope awsize_r[2:0]
+addSignal -h 15 -holdScope awsize_reg[2:0]
+addSignal -h 15 -holdScope b_id[3:0]
+addSignal -h 15 -holdScope b_ready
+addSignal -h 15 -holdScope b_ready_t
+addSignal -h 15 -holdScope b_resp[1:0]
+addSignal -h 15 -holdScope b_valid
+addSignal -h 15 -holdScope beat_cnt[7:0]
+addSignal -h 15 -holdScope beat_cnt_en
+addSignal -h 15 -holdScope beat_cnt_reg[7:0]
+addSignal -h 15 -holdScope bid_d[3:0]
+addSignal -h 15 -holdScope bresp_d[1:0]
+addSignal -h 15 -holdScope burst_size[7:0]
+addSignal -h 15 -holdScope data_en
+addSignal -h 15 -holdScope nst[2:0]
+addSignal -h 15 -holdScope pst[2:0]
+addSignal -h 15 -holdScope w_data[63:0]
+addSignal -h 15 -holdScope w_data_r1[63:0]
+addSignal -h 15 -holdScope w_data_r2[63:0]
+addSignal -h 15 -holdScope w_data_r[63:0]
+addSignal -h 15 -holdScope w_data_reg[63:0]
+addSignal -h 15 -holdScope w_id[3:0]
+addSignal -h 15 -holdScope w_last
+addSignal -h 15 -holdScope w_ready
+addSignal -h 15 -holdScope w_strb[7:0]
+addSignal -h 15 -holdScope w_strb_r[7:0]
+addSignal -h 15 -holdScope w_strb_reg[7:0]
+addSignal -h 15 -holdScope w_valid
+addSignal -h 15 -holdScope w_valid_t
+addSignal -h 15 -holdScope wdata_d[63:0]
+addSignal -h 15 -holdScope wr_addr[31:0]
+addSignal -h 15 -holdScope wr_rsp_en
+addSignal -h 15 -holdScope wr_rsp_en_d
+addSignal -h 15 -holdScope wr_trn_en
+addSignal -h 15 -holdScope wr_trn_en_reg
+addSignal -h 15 -holdScope wstrb_d[7:0]
+addSignal -h 15 /top/project_axi4_top/decoder/araddr[31:0]
+addSignal -h 15 -holdScope arburst[1:0]
+addSignal -h 15 -holdScope arcache[1:0]
+addSignal -h 15 -holdScope arlen[3:0]
+addSignal -h 15 -holdScope arlock[-9:0]
+addSignal -h 15 -holdScope arprot[2:0]
+addSignal -h 15 -holdScope arsize[2:0]
+addSignal -h 15 -holdScope awaddr[31:0]
+addSignal -h 15 -holdScope awburst[1:0]
+addSignal -h 15 -holdScope awcache[1:0]
+addSignal -h 15 -holdScope awlen[3:0]
+addSignal -h 15 -holdScope awlock[1:0]
+addSignal -h 15 -holdScope awprot[2:0]
+addSignal -h 15 -holdScope awsize[2:0]
+addSignal -h 15 -holdScope bid[3:0]
+addSignal -h 15 -holdScope bresp[3:0]
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope decode_rd_pkt
+addSignal -h 15 -holdScope decode_wr_pkt
+addSignal -h 15 -holdScope eop_detected
+addSignal -h 15 -holdScope fifo_empty
+addSignal -h 15 -holdScope fifo_empty_d1
+addSignal -h 15 -holdScope fifo_full
+addSignal -h 15 -holdScope fifo_rdata[127:0]
+addSignal -h 15 -holdScope fifo_rdata_stored[9:0]
+addSignal -h 15 -holdScope fifo_wdata[127:0]
+addSignal -h 15 -holdScope i[31:0]
+addSignal -h 15 -holdScope next_state[2:0]
+addSignal -h 15 -holdScope present_state[2:0]
+addSignal -h 15 -holdScope rd_rsp_en
+addSignal -h 15 -holdScope rd_trn_en
+addSignal -h 15 -holdScope rdata[63:0]
+addSignal -h 15 -holdScope read_enable
+addSignal -h 15 -holdScope rid[3:0]
+addSignal -h 15 -holdScope rlast
+addSignal -h 15 -holdScope rresp[1:0]
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope sop_detected
+addSignal -h 15 -holdScope store_addr[3:0]
+addSignal -h 15 -holdScope txn_id_r[3:0]
+addSignal -h 15 -holdScope txn_id_w[3:0]
+addSignal -h 15 -holdScope wdata[63:0]
+addSignal -h 15 -holdScope wr_rsp_en
+addSignal -h 15 -holdScope wr_trn_en
+addSignal -h 15 -holdScope write_data
+addSignal -h 15 -holdScope write_enable
+addSignal -h 15 -holdScope wstrb[3:0]
+addSignal -h 15 /uvm_custom_install_recording/env_str
+addSignal -h 15 -holdScope file_handle[31:0]
+addSignal -h 15 -holdScope is_sanity_exist[31:0]
+addSignal -h 15 -holdScope sanity_file_name
+addSignal -h 15 -holdScope vc_env_str
+addSignal -h 15 /uvm_custom_install_verdi_recording/debug_log_file_name
+addSignal -h 15 -holdScope enable_imp_port_recording
+addSignal -h 15 -holdScope enable_port_recording
+addSignal -h 15 -holdScope enable_tlm2_port_recording
+addSignal -h 15 -holdScope enable_verdi_debug
+addSignal -h 15 -holdScope env_str
+addSignal -h 15 -holdScope env_vcs_home
+addSignal -h 15 -holdScope env_vcs_uvm_home
+addSignal -h 15 -holdScope file_h[31:0]
+addSignal -h 15 -holdScope file_handle[31:0]
+addSignal -h 15 -holdScope hooks_version_flag
+addSignal -h 15 -holdScope is_sanity_exist[31:0]
+addSignal -h 15 -holdScope is_vcs_home_exist[31:0]
+addSignal -h 15 -holdScope is_vcs_uvm_home_exist[31:0]
+addSignal -h 15 -holdScope is_vpd_record[31:0]
+addSignal -h 15 -holdScope plusargs_tested
+addSignal -h 15 -holdScope rand_state
+addSignal -h 15 -holdScope sanity_file_name
+addSignal -h 15 -holdScope user_verbosity[31:0]
+addSignal -h 15 -holdScope uvmHandle[31:0]
+addSignal -h 15 -holdScope vc_env_str
+addSignal -h 15 -holdScope verdi_recorder_counter[31:0]
+addSignal -h 15 /uvm_custom_install_verdi_recording/Unnamed_$uvm_custom_install_verdi_recorder_sv_161/verb_count[31:0]
+addSignal -h 15 -holdScope verb_string
+addSignal -h 15 /uvm_custom_install_verdi_recording/Unnamed_$uvm_custom_install_verdi_recorder_sv_213/Unnamed_$uvm_custom_install_verdi_recorder_sv_247/val_str
+addSignal -h 15 /uvm_pkg/UVM_UNBOUNDED_CONNECTIONS[31:0]
+addSignal -h 15 -holdScope is_verdi_set_verbosity_called
+addSignal -h 15 -holdScope s_connection_error_id
+addSignal -h 15 -holdScope s_connection_warning_id
+addSignal -h 15 -holdScope s_spaces
+addSignal -h 15 -holdScope setting_comp
+addSignal -h 15 -holdScope setting_id
+addSignal -h 15 -holdScope setting_offset[63:0]
+addSignal -h 15 -holdScope setting_phase
+addSignal -h 15 -UNSIGNED -holdScope setting_verbosity[31:0]
+addSignal -h 15 -holdScope uvm_aa_string_key
+addSignal -h 15 -holdScope uvm_global_random_seed[31:0]
+addSignal -h 15 -holdScope uvm_start_uvm_declarations
+addSignal -h 15 -holdScope verdi_verbosity_options
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

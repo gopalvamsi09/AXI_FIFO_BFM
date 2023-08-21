@@ -26,6 +26,7 @@ module top;
   //giving as parameterised
   bit aclk;
   bit aresetn;
+  bit resetn; //for fifos
   int freq = 100;
   int t = 1000/freq;
 
@@ -57,7 +58,17 @@ module top;
     end
     aresetn = 1'b1;
   end
+  /*
+  initial begin
+    resetn = 1'b0;
+    #5 resetn = 1'b1;
 
+    repeat (1) begin
+      @(posedge aclk);
+    end
+    resetn = 1'b0;
+  end
+*/
   // Variable : intf
   // axi4 Interface Instantiation
   axi4_if intf(.aclk(aclk), .aresetn(aresetn));
@@ -69,11 +80,11 @@ module top;
   //giving same clk and reset to fifo and axi master
   //might be an error in fifo interface signals mapping, most probably in d_in and d_out
   
-  Project_AXI4_Top project_axi4_top(
+  Top_Module_AXI4 project_axi4_top(
 
     //clk nd reset
       .clk(aclk),
-      .rst(aresetn),
+      .rstn(aresetn), //gopal driving active high resetn
       .ACLK(aclk),
       .ARESETn(aresetn),
 

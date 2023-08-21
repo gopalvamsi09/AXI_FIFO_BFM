@@ -57,7 +57,7 @@ endclass : read_fifo_monitor
        pkt1.empty<=intf.empty;
        pkt1.full<=intf.full;
        */
-       $display("MONITOR_2");
+       //$display("MONITOR_2");
 
        item_collected_port1.write(pkt1);
 

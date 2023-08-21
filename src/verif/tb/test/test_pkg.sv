@@ -31,6 +31,7 @@ package test_pkg;
   `include "fifo_bfm_wr_rd_test.sv"
   `include "fifo_bfm_wr_test.sv"
 */
+  `include "fifo_bfm_wr_test.sv"
 endpackage : test_pkg
 
 `endif

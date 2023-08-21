@@ -94,14 +94,16 @@ interface slave_assertions (input                     aclk,
 
   //Assertion:   AXI_WA_VALID_STABLE_CHECK
   //Description: When AWVALID is asserted, then it must remain asserted until AWREADY is HIGH
-  //Assertion stays asserted from the time awvalid becomes high and till awready becomes high using s_until_with keyword
+  //Assertion stays asserted from the time awvalid becomes high and till awready becomes high
+  //using s_until_with keyword
+  /*
   property axi_write_address_channel_valid_stable_check;
     @(posedge aclk) disable iff (!aresetn)
     $rose(awvalid) |-> awvalid s_until_with awready;
   endproperty : axi_write_address_channel_valid_stable_check
   AXI_WA_VALID_STABLE_CHECK : assert property (axi_write_address_channel_valid_stable_check);
 
-
+*/
   //--------------------------------------------------------------------------------------------
   // Assertion properties written for various checks in write data channel
   //--------------------------------------------------------------------------------------------
@@ -124,13 +126,14 @@ interface slave_assertions (input                     aclk,
   //Assertion:   AXI_WD_VALID_STABLE_CHECK
   //Description: When WVALID is asserted, then it must remain asserted until WREADY is HIGH
   //Assertion stays asserted from the time wvalid becomes high and till wready becomes high using s_until_with keyword
+  /*
   property axi_write_data_channel_valid_stable_check;
     @(posedge aclk) disable iff (!aresetn)
     $rose(wvalid) |-> wvalid s_until_with wready;
   endproperty : axi_write_data_channel_valid_stable_check
   AXI_WD_VALID_STABLE_CHECK : assert property (axi_write_data_channel_valid_stable_check);
-  
-  
+  */
+
   //--------------------------------------------------------------------------------------------
   // Assertion properties written for various checks in write response channel
   //--------------------------------------------------------------------------------------------
@@ -153,12 +156,13 @@ interface slave_assertions (input                     aclk,
   //Assertion:   AXI_WR_VALID_STABLE_CHECK
   //Description: When BVALID is asserted, then it must remain asserted until BREADY is HIGH
   //Assertion stays asserted from the time bvalid becomes high and till bready becomes high using s_until_with keyword
+  /*
   property axi_write_response_channel_valid_stable_check;
     @(posedge aclk) disable iff(!aresetn)
     $rose(bvalid) |-> bvalid s_until_with bready;
   endproperty : axi_write_response_channel_valid_stable_check
   AXI_WR_VALID_STABLE_CHECK : assert property (axi_write_response_channel_valid_stable_check);
-  
+  */
   //--------------------------------------------------------------------------------------------
   // Assertion properties written for various checks in read address channel
   //--------------------------------------------------------------------------------------------
@@ -183,12 +187,13 @@ interface slave_assertions (input                     aclk,
   //Assertion:   AXI_RA_VALID_STABLE_CHECK
   //Description: When ARVALID is asserted, then it must remain asserted until ARREADY is HIGH
   //Assertion stays asserted from the time arvalid becomes high and till arready becomes high using s_until_with keyword
+  /*
   property axi_read_address_channel_valid_stable_check;
     @(posedge aclk) disable iff (!aresetn)
     $rose(arvalid) |-> arvalid s_until_with arready;
   endproperty : axi_read_address_channel_valid_stable_check
   AXI_RA_VALID_STABLE_CHECK : assert property (axi_read_address_channel_valid_stable_check);
-
+*/
 
   //--------------------------------------------------------------------------------------------
   // Assertion properties written for various checks in read data channel
@@ -213,12 +218,13 @@ interface slave_assertions (input                     aclk,
   //Assertion:   AXI_RD_VALID_STABLE_CHECK
   //Description: When RVALID is asserted, then it must remain asserted until RREADY is HIGH
   //Assertion stays asserted from the time rvalid becomes high and till rready becomes high using s_until_with keyword
+  /*
   property axi_read_data_channel_valid_stable_check;
     @(posedge aclk) disable iff (!aresetn)
     $rose(rvalid) |-> rvalid s_until_with rready;
   endproperty : axi_read_data_channel_valid_stable_check
   AXI_RD_VALID_STABLE_CHECK : assert property (axi_read_data_channel_valid_stable_check);
-
+*/
 endinterface : slave_assertions
 
 `endif

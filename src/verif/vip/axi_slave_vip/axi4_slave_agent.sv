@@ -62,7 +62,7 @@ endfunction : new
 //--------------------------------------------------------------------------------------------
 function void axi4_slave_agent::build_phase(uvm_phase phase);
   super.build_phase(phase);
-
+    axi4_slave_agent_cfg_h  = axi4_slave_agent_config::type_id::create("axi4_slave_agent_cfg_h",this);
    if(axi4_slave_agent_cfg_h.is_active == UVM_ACTIVE) begin
      axi4_slave_drv_proxy_h  = axi4_slave_driver_proxy::type_id::create("axi4_slave_drv_proxy_h",this);
      axi4_slave_write_seqr_h = axi4_slave_write_sequencer::type_id::create("axi4_slave_write_seqr_h",this);
@@ -90,6 +90,7 @@ function void axi4_slave_agent::connect_phase(uvm_phase phase);
     axi4_slave_drv_proxy_h.axi4_slave_agent_cfg_h  = axi4_slave_agent_cfg_h;
     axi4_slave_write_seqr_h.axi4_slave_agent_cfg_h = axi4_slave_agent_cfg_h;
     axi4_slave_read_seqr_h.axi4_slave_agent_cfg_h  = axi4_slave_agent_cfg_h;
+    //gopal commented
     axi4_slave_cov_h.axi4_slave_agent_cfg_h        = axi4_slave_agent_cfg_h;
     
     // Connecting the ports

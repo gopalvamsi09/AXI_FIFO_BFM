@@ -1,0 +1,50 @@
+# ** Warning: (vsim-3764) ../../src/verif/bfm/write_fifo//write_monitor.sv(56): Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /write_fifo_pkg File: ../../src/verif/bfm/write_fifo/write_fifo_pkg.sv
+# ** Warning: (vsim-3764) ../../src/verif/bfm/read_fifo//read_fifo_monitor.sv(39): Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /read_fifo_pkg File: ../../src/verif/bfm/read_fifo/read_fifo_pkg.sv
+# ** Warning: (vsim-3015) ../../src/verif/tb/top.sv(72): [PCDPC] - Port size (8) does not match connection size (4) for port 'RID_a'. The port definition is at: ../../src/rtl/Top_Module_AXI4.v(31).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top File: ../../src/rtl/Top_Module_AXI4.v
+# ** Warning: (vsim-3015) ../../src/verif/tb/top.sv(72): [PCDPC] - Port size (64) does not match connection size (32) for port 'RDATA_a'. The port definition is at: ../../src/rtl/Top_Module_AXI4.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top File: ../../src/rtl/Top_Module_AXI4.v
+# ** Warning: (vsim-3015) ../../src/verif/tb/top.sv(72): [PCDPC] - Port size (8) does not match connection size (4) for port 'BID_a'. The port definition is at: ../../src/rtl/Top_Module_AXI4.v(36).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top File: ../../src/rtl/Top_Module_AXI4.v
+# ** Warning: (vsim-3015) ../../src/verif/tb/top.sv(72): [PCDPC] - Port size (8) does not match connection size (4) for port 'AWID_a'. The port definition is at: ../../src/rtl/Top_Module_AXI4.v(42).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top File: ../../src/rtl/Top_Module_AXI4.v
+# ** Warning: (vsim-3015) ../../src/verif/tb/top.sv(72): [PCDPC] - Port size (8) does not match connection size (4) for port 'AWLEN_a'. The port definition is at: ../../src/rtl/Top_Module_AXI4.v(44).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top File: ../../src/rtl/Top_Module_AXI4.v
+# ** Warning: (vsim-3015) ../../src/verif/tb/top.sv(72): [PCDPC] - Port size (2) does not match connection size (4) for port 'AWCACHE_a'. The port definition is at: ../../src/rtl/Top_Module_AXI4.v(48).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top File: ../../src/rtl/Top_Module_AXI4.v
+# ** Warning: (vsim-3015) ../../src/verif/tb/top.sv(72): [PCDPC] - Port size (8) does not match connection size (4) for port 'ARID_a'. The port definition is at: ../../src/rtl/Top_Module_AXI4.v(51).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top File: ../../src/rtl/Top_Module_AXI4.v
+# ** Warning: (vsim-3015) ../../src/verif/tb/top.sv(72): [PCDPC] - Port size (2) does not match connection size (4) for port 'ARCACHE_a'. The port definition is at: ../../src/rtl/Top_Module_AXI4.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top File: ../../src/rtl/Top_Module_AXI4.v
+# ** Warning: (vsim-3015) ../../src/verif/tb/top.sv(72): [PCDPC] - Port size (64) does not match connection size (32) for port 'WDATA_a'. The port definition is at: ../../src/rtl/Top_Module_AXI4.v(61).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top File: ../../src/rtl/Top_Module_AXI4.v
+# ** Warning: (vsim-3015) ../../src/verif/tb/top.sv(72): [PCDPC] - Port size (8) does not match connection size (4) for port 'WSTRB_a'. The port definition is at: ../../src/rtl/Top_Module_AXI4.v(62).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top File: ../../src/rtl/Top_Module_AXI4.v
+# ** Warning: (vsim-3015) ../../src/rtl/Top_Module_AXI4.v(132): [PCDPC] - Port size (4) does not match connection size (2) for port 'bresp'. The port definition is at: ../../src/rtl/decoder.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top/DUT_decoder File: ../../src/rtl/decoder.v
+# ** Warning: (vsim-3015) ../../src/rtl/Top_Module_AXI4.v(132): [PCDPC] - Port size (4) does not match connection size (8) for port 'wstrb'. The port definition is at: ../../src/rtl/decoder.v(52).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top/DUT_decoder File: ../../src/rtl/decoder.v
+# ** Warning: (vsim-3015) ../../src/rtl/Top_Module_AXI4.v(132): [PCDPC] - Port size (10) does not match connection size (2) for port 'arlock'. The port definition is at: ../../src/rtl/decoder.v(60).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top/DUT_decoder File: ../../src/rtl/decoder.v
+# ** Warning: (vsim-3015) ../../src/rtl/Top_Module_AXI4.v(177): [PCDPC] - Port size (4) does not match connection size (8) for port 'BID'. The port definition is at: ../../src/rtl/AXI_Master.v(50).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top/DUT_axi File: ../../src/rtl/AXI_Master.v
+# ** Warning: (vsim-3015) ../../src/rtl/Top_Module_AXI4.v(177): [PCDPC] - Port size (8) does not match connection size (4) for port 'awlen_d'. The port definition is at: ../../src/rtl/AXI_Master.v(79).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top/DUT_axi File: ../../src/rtl/AXI_Master.v
+# ** Warning: (vsim-3015) ../../src/rtl/Top_Module_AXI4.v(177): [PCDPC] - Port size (8) does not match connection size (4) for port 'arlen_d'. The port definition is at: ../../src/rtl/AXI_Master.v(98).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top/DUT_axi File: ../../src/rtl/AXI_Master.v
+# ** Warning: (vsim-3015) ../../src/rtl/Top_Module_AXI4.v(177): [PCDPC] - Port size (8) does not match connection size (4) for port 'rid_d'. The port definition is at: ../../src/rtl/AXI_Master.v(107).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top/DUT_axi File: ../../src/rtl/AXI_Master.v
+# ** Warning: (vsim-3015) ../../src/rtl/AXI_Master.v(122): [PCDPC] - Port size (8) does not match connection size (4) for port 'BID'. The port definition is at: ../../src/rtl/AXI_MASTER_WRITE__CONTROL.v(53).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top/DUT_axi/AXI_WRITE_CONTROL File: ../../src/rtl/AXI_MASTER_WRITE__CONTROL.v
+# ** Warning: (vsim-3015) ../../src/rtl/AXI_Master.v(122): [PCDPC] - Port size (4) does not match connection size (8) for port 'awlen_d'. The port definition is at: ../../src/rtl/AXI_MASTER_WRITE__CONTROL.v(63).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top/DUT_axi/AXI_WRITE_CONTROL File: ../../src/rtl/AXI_MASTER_WRITE__CONTROL.v
+# ** Warning: (vsim-3015) ../../src/rtl/AXI_Master.v(178): [PCDPC] - Port size (4) does not match connection size (8) for port 'arlen_d'. The port definition is at: ../../src/rtl/AXI_MASTER_READ_Control.v(59).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top/DUT_axi/AXI_READ_CONTROL File: ../../src/rtl/AXI_MASTER_READ_Control.v
+# ** Warning: (vsim-3015) ../../src/rtl/AXI_Master.v(178): [PCDPC] - Port size (4) does not match connection size (8) for port 'rid_d'. The port definition is at: ../../src/rtl/AXI_MASTER_READ_Control.v(68).
+#    Time: 0 ps  Iteration: 0  Instance: /top/project_axi4_top/DUT_axi/AXI_READ_CONTROL File: ../../src/rtl/AXI_MASTER_READ_Control.v
+# ** Warning: (vsim-3764) ../../src/verif/bfm/write_fifo//write_driver.sv(59): Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /write_fifo_pkg::write_fifo_driver File: ../../src/verif/bfm/write_fifo/write_fifo_pkg.sv
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+

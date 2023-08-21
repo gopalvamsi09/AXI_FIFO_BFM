@@ -1,0 +1,80 @@
+wvCreateWindow
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 \
+           {/hwetools/work_area/frontend/gopalVamsi_b7/git_projects/AXI_FIFO_BFM_COPY/sim/synopsys_sim/novas.fsdb}
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/_\$novas_unit__1"
+wvGetSignalSetScope -win $_nWave2 "/tb_slave_assertions"
+wvGetSignalSetScope -win $_nWave2 "/top"
+wvGetSignalSetScope -win $_nWave2 "/top/project_axi4_top"
+wvSetPosition -win $_nWave2 {("G1" 22)}
+wvSetPosition -win $_nWave2 {("G1" 22)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/top/project_axi4_top/ACLK} \
+{/top/project_axi4_top/ARESETn} \
+{/top/project_axi4_top/AWADDR_a\[31:0\]} \
+{/top/project_axi4_top/AWBURST_a\[1:0\]} \
+{/top/project_axi4_top/AWCACHE_a\[1:0\]} \
+{/top/project_axi4_top/AWID_a\[3:0\]} \
+{/top/project_axi4_top/AWLEN_a\[3:0\]} \
+{/top/project_axi4_top/AWLOCK_a\[1:0\]} \
+{/top/project_axi4_top/AWPROT_a\[2:0\]} \
+{/top/project_axi4_top/AWREADY_a} \
+{/top/project_axi4_top/AWSIZE_a\[2:0\]} \
+{/top/project_axi4_top/AWVALID_a} \
+{/top/project_axi4_top/BID_a\[3:0\]} \
+{/top/project_axi4_top/BREADY_a} \
+{/top/project_axi4_top/BRESP_a\[1:0\]} \
+{/top/project_axi4_top/BVALID_a} \
+{/top/project_axi4_top/WDATA_a\[63:0\]} \
+{/top/project_axi4_top/WID_a\[3:0\]} \
+{/top/project_axi4_top/WLAST_a} \
+{/top/project_axi4_top/WREADY_a} \
+{/top/project_axi4_top/WVALID_a} \
+{/top/project_axi4_top/WSTRB_a\[7:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 22 )} 
+wvSetPosition -win $_nWave2 {("G1" 22)}
+wvSetPosition -win $_nWave2 {("G1" 22)}
+wvSetPosition -win $_nWave2 {("G1" 22)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/top/project_axi4_top/ACLK} \
+{/top/project_axi4_top/ARESETn} \
+{/top/project_axi4_top/AWADDR_a\[31:0\]} \
+{/top/project_axi4_top/AWBURST_a\[1:0\]} \
+{/top/project_axi4_top/AWCACHE_a\[1:0\]} \
+{/top/project_axi4_top/AWID_a\[3:0\]} \
+{/top/project_axi4_top/AWLEN_a\[3:0\]} \
+{/top/project_axi4_top/AWLOCK_a\[1:0\]} \
+{/top/project_axi4_top/AWPROT_a\[2:0\]} \
+{/top/project_axi4_top/AWREADY_a} \
+{/top/project_axi4_top/AWSIZE_a\[2:0\]} \
+{/top/project_axi4_top/AWVALID_a} \
+{/top/project_axi4_top/BID_a\[3:0\]} \
+{/top/project_axi4_top/BREADY_a} \
+{/top/project_axi4_top/BRESP_a\[1:0\]} \
+{/top/project_axi4_top/BVALID_a} \
+{/top/project_axi4_top/WDATA_a\[63:0\]} \
+{/top/project_axi4_top/WID_a\[3:0\]} \
+{/top/project_axi4_top/WLAST_a} \
+{/top/project_axi4_top/WREADY_a} \
+{/top/project_axi4_top/WVALID_a} \
+{/top/project_axi4_top/WSTRB_a\[7:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 22 )} 
+wvSetPosition -win $_nWave2 {("G1" 22)}
+wvGetSignalClose -win $_nWave2
+wvSetCursor -win $_nWave2 146814.667291 -snap {("G1" 17)}
+wvSetCursor -win $_nWave2 163801.488299 -snap {("G1" 17)}
+wvSetCursor -win $_nWave2 198988.474675 -snap {("G1" 17)}
+wvSetCursor -win $_nWave2 222042.017472 -snap {("G1" 17)}
+wvSetCursor -win $_nWave2 254802.315132 -snap {("G1" 17)}
+wvSetCursor -win $_nWave2 281495.891003 -snap {("G1" 17)}
+wvSetCursor -win $_nWave2 311829.499948 -snap {("G1" 17)}
+debExit

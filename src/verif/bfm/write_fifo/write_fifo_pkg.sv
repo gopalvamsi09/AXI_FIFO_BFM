@@ -11,9 +11,12 @@ package write_fifo_pkg;
   `include "uvm_macros.svh"
   import uvm_pkg::*;
   import axi4_globals_pkg::*;
+  import axi4_slave_pkg::*;
   
   //Include all other files
   `include "write_fifo_seq_item.sv"
+  `include "axi4_slave_nbk_base_seq.sv"
+  `include "axi4_slave_nbk_write_64b_transfer_seq.sv"
   `include "fifo_bfm_base_seq.sv"
   /*
   `include "axi_burst_type_seq.sv"
@@ -27,6 +30,7 @@ package write_fifo_pkg;
   `include "fifo_bfm_wr_rd_seq.sv"
   `include "fifo_bfm_wr_seq.sv"
   */
+  `include "fifo_bfm_wr_seq.sv"
   `include "write_sequencer.sv"
   `include "write_driver.sv"
   `include "write_monitor.sv"

@@ -9,7 +9,7 @@ class fifo_bfm_write_full_seq extends fifo_bfm_base_seq;
   //-------------------------------------------------------
   // Externally defined Tasks and Functions
   //-------------------------------------------------------
-  extern function new(string name = "fifo_bfm_write_full_seq", uvm_component parent = null);
+  extern function new(string name = "fifo_bfm_write_full_seq");
   extern virtual task body();
 
 endclass:fifo_bfm_write_full_seq

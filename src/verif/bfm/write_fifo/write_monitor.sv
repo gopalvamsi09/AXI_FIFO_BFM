@@ -87,7 +87,7 @@ task fifo_bfm_monitor::run_phase(uvm_phase phase);
   pkt.data_in<=intf.wr_data;
   */
   item_collected_port.write(pkt);
-  $display("Monitor received the data");
+  //$display("Monitor received the data");
   end
 
 endtask : run_phase

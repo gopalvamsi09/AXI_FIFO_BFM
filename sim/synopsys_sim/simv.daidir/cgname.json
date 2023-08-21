@@ -1,0 +1,146 @@
+{
+    "_vcs_DPI_package": [
+        "_vcs_DPI_package",
+        "uM9F1",
+        "module",
+        1
+    ],
+    "fsdbDumpDesign$$": [
+        "fsdbDumpDesign0x240x24",
+        "cfx32",
+        "module",
+        2
+    ],
+    "vcs_paramclassrepository": [
+        "vcs_paramclassrepository",
+        "hEeZs",
+        "module",
+        3
+    ],
+    "_vcs_unit__1655007382": [
+        "_vcs_unit__1655007382",
+        "IUqze",
+        "module",
+        4
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        5
+    ],
+    "uvm_pkg": [
+        "uvm_pkg",
+        "zr7M1",
+        "module",
+        6
+    ],
+    "_vcs_msglog": [
+        "_vcs_msglog",
+        "zQBzV",
+        "module",
+        7
+    ],
+    "uvm_custom_install_recording": [
+        "uvm_custom_install_recording",
+        "nhiwz",
+        "module",
+        8
+    ],
+    "uvm_custom_install_verdi_recording": [
+        "uvm_custom_install_verdi_recording",
+        "EbjT3",
+        "module",
+        9
+    ],
+    "Top_Module_AXI4": [
+        "Top_Module_AXI4",
+        "Tp7vh",
+        "module",
+        10
+    ],
+    "axi4_globals_pkg": [
+        "axi4_globals_pkg",
+        "mCUig",
+        "module",
+        11
+    ],
+    "slave_assertions": [
+        "slave_assertions",
+        "rp22H",
+        "module",
+        12
+    ],
+    "tb_slave_assertions": [
+        "tb_slave_assertions",
+        "JPCAU",
+        "module",
+        13
+    ],
+    "axi4_if": [
+        "axi4_if",
+        "A6N7j",
+        "module",
+        14
+    ],
+    "fifo_if": [
+        "fifo_if",
+        "reD5S",
+        "module",
+        15
+    ],
+    "axi4_slave_pkg": [
+        "axi4_slave_pkg",
+        "CRx5S",
+        "module",
+        16
+    ],
+    "write_fifo_pkg": [
+        "write_fifo_pkg",
+        "VyZg2",
+        "module",
+        17
+    ],
+    "read_fifo_pkg": [
+        "read_fifo_pkg",
+        "E0wxq",
+        "module",
+        18
+    ],
+    "axi4_slave_driver_bfm": [
+        "axi4_slave_driver_bfm",
+        "tN60h",
+        "module",
+        19
+    ],
+    "axi4_slave_monitor_bfm": [
+        "axi4_slave_monitor_bfm",
+        "U0y0T",
+        "module",
+        20
+    ],
+    "axi_env_pkg": [
+        "axi_env_pkg",
+        "hQLzN",
+        "module",
+        21
+    ],
+    "test_pkg": [
+        "test_pkg",
+        "RW5mj",
+        "module",
+        22
+    ],
+    "top": [
+        "top",
+        "Emx8S",
+        "module",
+        23
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        24
+    ]
+}

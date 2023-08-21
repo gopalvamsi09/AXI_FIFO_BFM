@@ -5,16 +5,21 @@
 // Class: write_fifo_seq_item
 // <Description_here>
 //--------------------------------------------------------------------------------------------
-class fifo_sequence_item #(int ADDRESS_WIDTH=32,DATA_WIDTH=32) extends uvm_sequence_item;
+class fifo_sequence_item #(int ADDRESS_WIDTH=32,DATA_WIDTH=56) extends uvm_sequence_item;
   //packet declaration
-  const logic [7:0] sop=8'b01010101;
-  const logic [7:0] eop=8'b10101011;
+  const logic [7:0] sop=8'b10101010;//8'b01010101; //gopal changed as per spec
+  const logic [7:0] eop=8'b01010011;//8'b10101011;
   // int packet [];
-  enum bit [2:0] {axi_fifo_write_address_enable=0,
-                           axi_fifo_write_data_enable1=1,
+  typedef enum bit [2:0] {axi_fifo_write_address_enable=0,
+                           axi_fifo_write_data_enable=1,
                            axi_fifo_read_address_enable=2,
                            axi_fifo_read_data_enable=3,
                            axi_fifo_response_enable=4} type_of_axi;
+
+  rand type_of_axi type_of_axi_e;
+  
+  rand bit wr_en;
+  rand bit rd_en;
   
   //write Address Channel
   rand bit [3:0] awid;
@@ -23,7 +28,7 @@ class fifo_sequence_item #(int ADDRESS_WIDTH=32,DATA_WIDTH=32) extends uvm_seque
   rand bit [2:0] awsize;
   rand bit [1:0] awburst;
   rand bit [1:0] awlock;
-  rand bit [3:0] awcache;
+  rand bit [1:0] awcache;
   rand bit [2:0] awprot;
   rand bit [3:0] awqos;
   rand bit [3:0] awregion;
@@ -33,7 +38,8 @@ class fifo_sequence_item #(int ADDRESS_WIDTH=32,DATA_WIDTH=32) extends uvm_seque
 
   //Write data channel
   rand bit [DATA_WIDTH-1:0] wdata;
-  rand bit [(DATA_WIDTH/8)-1:0] wstrb;
+  //rand bit [(DATA_WIDTH/8)-1:0] wstrb;
+  rand bit[3:0] wstrb;//gopal hardcoded
   rand bit wlast;
   rand bit [3:0] wid;
  // logic [3:0] wuser;
@@ -120,6 +126,10 @@ class fifo_sequence_item #(int ADDRESS_WIDTH=32,DATA_WIDTH=32) extends uvm_seque
  // `uvm_field_int(rready,UVM_ALL_ON)
 
   `uvm_object_utils_end
+
+  constraint AWBURST{awburst inside {[1:2]};};
+  constraint AWLOCK{awlock==0;};
+  constraint AWCACHE{awcache==0;};
   //-------------------------------------------------------
   // Externally defined Tasks and Functions
   //-------------------------------------------------------
